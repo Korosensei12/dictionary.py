@@ -1,0 +1,27 @@
+meme_dict = {
+    "CRINGE": "Garip ya da utandırıcı bir şey",
+    "LOL": "Komik bir şeye verilen cevap",
+    "ROFL": "Bir şakaya karşılık cevap",
+    "SHEESH": "Onaylamamak",
+    "CREEPY": "Korkunç",
+    "AGGRO": "Agresifleşmek/Sinirlenmek",
+    "BOOMER": "Yaşlı"
+}
+
+print(meme_dict.keys())
+
+sayi = int(input("Kaç kelime aratmak istiyorsunuz:"))
+
+while sayi > len(meme_dict):
+    sayi = int(input("Dostum sözlüğümde o kadar kelime yok tekrardan girer misin:"))
+
+for i in range(sayi):
+    word = input("Anlamadığınız bir kelime yazın:")
+    kelime = word.upper()
+
+    if kelime in meme_dict:
+        print(meme_dict[kelime])
+    else:
+        print("Üzgünüm dostum şu an sorduğun soruyu karşılayabilecek bir bilgi yok sözlüğümde:(")
+        
+          
